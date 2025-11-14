@@ -1,0 +1,299 @@
+/* Modern UI Theme for AI Talent Acquisition */
+
+/* Main theme colors */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --accent-color: #7209b7;
+    --success-color: #4cc9f0;
+    --warning-color: #f72585;
+    --text-color: #e6e8ef;
+    --light-bg: #1e2027;
+    --card-bg: #252a36;
+    --sidebar-bg: #252850;
+    --tag-bg: #374151;
+    --card-border: #374151;
+}
+
+/* Base styling */
+html, body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+/* Header styling */
+.stApp header {
+    background-color: transparent !important;
+}
+
+/* Custom sidebar */
+.sidebar .sidebar-content {
+    background-color: var(--sidebar-bg);
+    color: white;
+}
+
+/* Main page container */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+}
+
+/* Cards */
+.card {
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid transparent;
+}
+
+.card-primary {
+    border-left-color: var(--primary-color);
+}
+
+.card-accent {
+    border-left-color: var(--accent-color);
+}
+
+.card-success {
+    border-left-color: var(--success-color);
+}
+
+.card-warning {
+    border-left-color: var(--warning-color);
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Primary Button */
+.primary-btn button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Success Button */
+.success-btn button {
+    background-color: var(--success-color);
+    color: white;
+}
+
+/* Warning Button */
+.warning-btn button {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+/* Custom progress bar */
+.stProgress > div > div {
+    background-color: var(--primary-color);
+}
+
+/* Custom multiselect */
+.stMultiSelect > div {
+    border-radius: 4px;
+}
+
+/* Metrics */
+.metric-card {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: #a3adc2;
+    text-transform: uppercase;
+}
+
+/* Candidate cards */
+.candidate-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+    color: var(--text-color);
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.candidate-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.candidate-info {
+    font-size: 0.9rem;
+    color: #a3adc2;
+    margin-bottom: 0.5rem;
+}
+
+.candidate-bio {
+    background-color: rgba(55, 65, 81, 0.5);
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    color: var(--text-color);
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: var(--tag-bg);
+    color: var(--text-color);
+    border-radius: 16px;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Custom header */
+.custom-header {
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem 1rem;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Dashboard stats */
+.stat-box {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stat-box h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--primary-color);
+}
+
+.stat-box p {
+    font-size: 0.9rem;
+    color: #a3adc2;
+}
+
+/* Job details */
+.job-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.job-content {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    padding: 0 1rem;
+    background-color: var(--card-bg);
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Make links more visible */
+a {
+    color: var(--success-color) !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Override default Streamlit styling for dark theme */
+.st-emotion-cache-16txtl3 {
+    background-color: var(--light-bg);
+}
+
+.st-emotion-cache-6qob1r {
+    background-color: var(--light-bg);
+}
+
+.st-emotion-cache-ue6h4q {
+    color: var(--text-color);
+}
+
+/* Table styling */
+.stDataFrame {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+}
+
+.stDataFrame thead th {
+    background-color: rgba(55, 65, 81, 0.8) !important;
+    color: white !important;
+}
+
+.stDataFrame tbody tr {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+}
+
+.stDataFrame tbody tr:nth-child(even) {
+    background-color: rgba(55, 65, 81, 0.3) !important;
+}
